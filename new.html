@@ -1,0 +1,66 @@
+<!-- new.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dear Shreya</title>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <div class="content">
+      <div class="text">
+        <div class="text-wrapper">
+  <div class="text-mask"></div>
+  <div class="text actual-text">
+    <p>
+      Shreya Pookie 💖,<br />
+      Baccha, I want to promise you that there will be no day of your life
+      when you will not find me by your side. There will be no day when I
+      will not be loving you and pampering you because you mean a lot to me.
+      You are my pgliiiiiiiii; you make me want to be the best for you
+      because you are the best for me. I am so delighted and glad, and I am
+      filled with joy to be called your man — in other words, I’m satisfied.
+      I love you, my chota don 🤞. I will adore every bit of you because you
+      deserve everything. Jao ebar giye brush koro, ekhan obdi smell asche 😂😂🤣
+    </p>
+    <p>Missing You A Lot 💖<br> --- Tomar Taklu Don 🤞</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <h3>Screen e tap koro 😊</h3>
+    <canvas></canvas>
+
+    <!-- Shader Scripts -->
+    <script type="x-shader/x-fragment" id="vertShader">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderAdvection">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderDivergence">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderPressure">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderGradientSubtract">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderPoint">/* shader code */</script>
+    <script type="x-shader/x-fragment" id="fragShaderDisplay">/* shader code */</script>
+
+    <!-- WebGL fluid script -->
+    <script src="untoldcodding.js"></script>
+    <script>
+  const mask = document.querySelector('.text-mask');
+
+  function updateMask(e) {
+    let x = e.clientX || e.touches[0].clientX;
+    let y = e.clientY || e.touches[0].clientY;
+
+    mask.style.setProperty('--x', `${x}px`);
+    mask.style.setProperty('--y', `${y}px`);
+  }
+
+  document.addEventListener('mousemove', updateMask);
+  document.addEventListener('touchmove', updateMask);
+</script>
+
+
+
+  </body>
+</html>

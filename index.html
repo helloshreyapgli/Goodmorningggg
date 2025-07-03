@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For_Shreya_Don</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background Music -->
+    <audio id="bgMusic" loop preload="auto">
+      <source src="audio.mp3" type="audio/mpeg" />
+      Your browser isn't invited for super fun audio time.
+    </audio>
+
+    <section id="home" class="home">
+      <div class="home_section"></div>
+
+      <div id="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <a href="new.html">
+          <p>
+            Goodmorning 💕 <br />
+            Shreya The DON 😂 <br />
+            <span>Click Here</span>
+          </p>
+        </a>
+      </div>
+
+      <h1><span>I&nbsp;</span><span>You</span></h1>
+      <h2>
+        I have Something for you💖 <br />
+        Sreen e tap koro
+      </h2>
+    </section>
+
+    <script>
+      // Play music once user interacts
+      document.body.addEventListener("click", () => {
+        document.getElementById("bgMusic").play();
+      }, { once: true });
+    </script>
+  </body>
+</html>
